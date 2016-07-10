@@ -1,0 +1,166 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*end of default resets*/
+
+
+#wrapper {
+  width: 100%;
+  background-color: rgba(88, 89, 91, 1);
+}
+#container {
+	width: 90%;
+	margin: 0 auto;
+	font-family: sans-serif;
+}
+
+header {
+	margin: 0 auto;
+	border: 1px solid red;
+  padding: 15px 0 15px 25px;
+  box-shadow: 3px 0px 5px black;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(88, 89, 91, 1);
+}
+header ul {
+  margin-right: 6em;
+  list-style-type: none;
+  background-color: rgba(88, 89, 91, 1);
+  float: right;
+}
+header li {
+  font-size: 1.25em;
+  padding: 1.1em .2em 1.1em 0em;
+  margin: 0 .5em 0 1em;
+  float: left;
+  display: inline;
+  background-color: rgba(88, 89, 91, 1);
+  color: rgb(199, 201, 202);
+  font-weight: 600;
+}
+header li span {
+  color: #FFD700;
+	font-weight: 600;
+}
+header li:hover {
+  color: #FFD700;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+#mattock-logo {
+  width: 27%;
+}
+#three-by-three-thumbnail-grid {
+  margin: 0 auto;
+  padding-top: 8.5em;
+  padding-bottom: 3.5em;
+  padding-left: 2em;
+  background-color: rgb(199, 201, 202);
+  clear: both;
+  overflow: hidden;
+}
+.img-container {
+	position: relative;
+	padding-bottom: 67.166666%;
+	height: 0;
+	overflow: hidden
+}
+.thumbnails img {
+  width: 100%;
+}
+.thumbnails {
+  width: 30%;
+  margin: 1.25em 0 0 1.25em;
+  padding: 0;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.bottom-pop-up {
+  width: 100%;
+  padding: 2em 0;
+  bottom: -104px;
+  background-color: rgb(245, 205, 40);
+  color: #FFF;
+  text-align: center;
+  position: absolute;
+}
+.thumbnails:hover .bottom-pop-up {
+  bottom: 0px;
+  transition-property: all;
+  transition-duration: 500ms;
+}
+.bottom-pop-up h2 {
+  font-size: 1.25em;
+}
+
+footer {
+  padding: 2.25em 3em 1.75em 3em;
+  margin: 0 auto;
+  font-size: .75em;
+  clear: both;
+  background-color: rgba(37, 37, 37, 1);
+  color: rgba(119, 119, 119, 1);
+}
+@media screen and (max-width:690px) and (min-width:480px) {
+	#container header {
+		max-width: 85%!important;
+	}
+}
+@media screen and (max-width:320px) and (min-width:480px) {
+	#container header {
+		max-width: 420px;
+	}
+}
+/*@media screen and (max-width:1000px) and (min-width:690px) {
+	#container header {
+		max-width: 600px;
+	}
+  header {
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+  }
+}*/
